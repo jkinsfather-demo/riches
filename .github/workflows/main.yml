@@ -32,11 +32,6 @@ jobs:
         env:
           PACKAGE_OPTS: "-bt none"
        
-      # Package code for FOD delivery
-      - uses: montudor/action-zip@v1
-        with:
-          args: zip -qq -r package.zip . -i dir
-       
       # Start Fortify on Demand SAST scan and wait until results complete.
       - name: Download Fortify on Demand Universal CI Tool
         uses: fortify/gha-setup-fod-uploader@v1
