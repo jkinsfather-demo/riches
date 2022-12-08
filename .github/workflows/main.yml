@@ -51,6 +51,7 @@ jobs:
   importresults:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Setup Java
         uses: actions/setup-java@v1
         with:
