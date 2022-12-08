@@ -73,5 +73,5 @@ jobs:
       - name: Import Results
         uses: github/codeql-action/upload-sarif@v1
         with:
-          sarif_file: ./gh-fortify-sast.sarif
+          sarif_file: "/home/runner/work/riches/riches/gh-fortify-sast.sarif"
       
